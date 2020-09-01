@@ -8,7 +8,10 @@ body {
   
 }
 
-
+.app {
+  display: flex; 
+  justify-content:space-evenly;
+}
 .app__header {
   display: flex; 
   align-items: center;
@@ -18,5 +21,21 @@ body {
 
 .app__stats {
   display: flex;
-  justify-content: space-between;
+
+}
+
+.app__left {
+  flex: .9;
+}
+
+@media (max-width: 990px) {
+  .app{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 330px) {
+  * {
+    flex-direction: column;
+  }
 }

@@ -11,6 +11,7 @@ import Map from './Map'
 import InfoBox from './InfoBox';
 import Table from './Table';
 import { sortData } from './util';
+import LineGraph from './LineGraph';
 import './App.css';
 
 
@@ -80,7 +81,7 @@ function App() {
               </FormControl> 
           </div>
 
-        <div className="app__stats">
+        <div className="app__stats">  
           <InfoBox title="Cases Today" total={countryData.cases} cases={countryData.todayCases} />
           <InfoBox title="Deaths Today"  total={countryData.deaths} cases={countryData.todayCases} />
           <InfoBox title="Recoveries Today"  total={countryData.recovered} cases={countryData.todayRecovered} />
@@ -90,7 +91,6 @@ function App() {
         <Map />
         
 
-    {/* Graph */}
                 
     {/* Map */}
 
@@ -100,6 +100,7 @@ function App() {
             <h3>Live Cases by Country</h3>
                 
                 <Table countries={tableData}> </Table> 
+                <LineGraph />
 
           </CardContent>
         </Card>

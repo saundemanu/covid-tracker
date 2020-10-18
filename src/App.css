@@ -1,5 +1,5 @@
 * {
-margin: 0;
+margin: 0px
 }
 
 body {
@@ -11,22 +11,38 @@ body {
 .app {
   display: flex; 
   justify-content:space-evenly;
+  padding: 20px;
+
 }
 .app__header {
   display: flex; 
   align-items: center;
+  
   margin-bottom: 20px; 
   justify-content: space-between;
 }
 
+.app__header > h1 {
+  color: #fc3c4c;
+  font-size: 2rem;
+}
+
+
 .app__stats {
   display: flex;
-
+  justify-content: space-between;
 }
 
 .app__left {
   flex: .9;
 }
+
+.app__right {
+  overflow: hidden;
+  display: flex;
+}
+
+
 
 @media (max-width: 990px) {
   .app{
